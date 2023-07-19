@@ -1,16 +1,16 @@
 module.exports = {
     server: {
-        domain: "localhost",
-        https: false,
+        domain: "mans-verify.vercel.app",
+        https: true,
         httpPort: 8080,
     },
 
     Discord: {
         // —— Things that are required for the whole project to work.
-        token: "", // —— Your bot's token.
-        botId: "", // —— The bot's ID.
-        guildId: "", // —— The server ID on where the commands will be deployed.
-        verifiedRole: "", // —— Role that will be added to the user when they verify their account.
+        token: process.env.token, // —— Your bot's token.
+        botId: "899732935412957224", // —— The bot's ID.
+        guildId: "935655331713917070", // —— The server ID on where the commands will be deployed.
+        verifiedRole: "1131219293216985168", // —— Role that will be added to the user when they verify their account.
 
         // —— For users that want to have a role removed upon verification, if you want this, set remove-role to true, and set your remove role ID.
         removeRole: false,
@@ -26,7 +26,7 @@ module.exports = {
     },
 
     reCAPTCHA: {
-        secretKey: "",
-        publicKey: ""
+        secretKey: "6LdtuDgnAAAAALzmVhYWpHQJAN3YRZ-67QY0-Ep_",
+        publicKey: "6LdtuDgnAAAAAGMKSdYzhugQT0lJTnwWQ3JUA2ZH"
     }
 }
